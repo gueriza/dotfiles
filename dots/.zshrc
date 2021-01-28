@@ -1,5 +1,5 @@
 # oh-my-zsh
-export ZSH=/Users/jackharrison-sherlock/.oh-my-zsh
+export ZSH=/Users/riza/.oh-my-zsh
 
 # Theme
 ZSH_THEME="common"
@@ -24,14 +24,6 @@ source $(dirname $(gem which colorls))/tab_complete.sh
 
 # Editor
 export EDITOR=nano
-
-# Go
-export GOPATH=$HOME/code/go
-export PATH=$PATH:$GOPATH/bin
-
-# Ruby
-eval "$(rbenv init -)"
-export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 # SSH
 export PATH="/usr/local/sbin:$PATH"

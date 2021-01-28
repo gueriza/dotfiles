@@ -11,49 +11,40 @@ else
 fi
 
 brew update
+brew upgrade
 
 # GNU core utilities
 brew install coreutils
 brew install moreutils
 brew install findutils
+ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
 # Install zsh
 brew install zsh
 brew install tree
-brew install getantibody/tap/antibody
+brew install antigen
 
 # Highlighting
 brew install source-highlight
 
 # Git
 brew install git
-brew install git-flow
-brew install cdiff
+brew install ydiff
 brew install hub
 
 # Development
-brew install go
-brew install delve
 brew install python
 brew install python3
-brew install php@7.1
-brew install ruby
+brew install php@7.3
 brew install node
 brew install nvm
-brew install sqllite
 brew install yarn
-brew install java
-brew install groovy
-
-# AWS
-brew install awscli
 
 # Other
 brew install mas
-brew install tmux
-brew install neovim
-brew install wget
-brew install gdrive
+brew install wget --with-iri
 brew install micro
+brew install gnupg
+brew install ssh-copy-id
 
 brew cleanup

@@ -4,57 +4,56 @@ brew tap caskroom/cask
 brew tap caskroom/versions
 
 # Browsers
-brew cask install google-chrome
-brew cask install google-chrome-canary
-brew cask install firefox
+brew install --cask brave-browser
 
 # Development
-brew cask install visual-studio-code
-brew cask install atom
-brew cask install hyper
-brew cask install postman
-brew cask install sequel-pro
-brew cask install docker
-brew cask install aws-vault
-brew cask install ngrok
+brew install --cask vscodium
+brew install --cask sequel-pro
 
 # Design
-brew cask install figma
+brew install --cask fontbase
 
 # Communication
-brew cask install slack
-brew cask install whatsapp
-brew cask install teamviewer
-brew cask install loom
+brew install --cask telegram
 
 # Cloud
-brew cask install dropbox
-brew cask install google-backup-and-sync
+brew install --cask dropbox
 
 # Productivity
-brew cask install alfred
-brew cask install kap
-brew cask install 1password
-brew cask install openoffice
-brew cask install notion
+brew install --cask alfred
+brew install --cask appcleaner
+brew install --cask avibrazil-rdm
+brew install --cask bitbar
+brew install --cask cocktail
+brew install --cask github
+brew install --cask hiddenbar
+brew install --cask iterm2
+brew install --cask itsycal
+brew install --cask maccy
+brew install --cask rectangle
+brew install --cask the-unarchiver
+brew install --cask tradingview
+# brew install --cask kap --> OSS Screen Recorder
+# brew install --cask notion --> Future ?
 
 # Media
-brew cask install catch
-brew cask install spotify
-brew cask install vlc
-brew cask install transmission
+brew install --cask aerial
+brew install --cask iina
+brew install --cask motrix
 
 # Mac OS Enhancements
-brew cask install bartender
-brew cask install spectacle
-brew cask install rocket
-brew cask install hazel
-brew cask install bettertouchtool
 brew tap buo/cask-upgrade
+# brew tap thii/fonts
+# brew install --cask font-sanfrancisco
+# brew install --cask hazel
+# brew install --cask bettertouchtool
 
 # Other
-brew cask install font-hack-nerd-font
+# brew install --cask font-hack-nerd-font
 
 # Install Mac App Store apps
 mas Spark, id: 1176895641
 mas Xcode, id: 497799835
+mas Amphetamine, id: 937984704
+mas Twitter, id: 1482454543
+mas Binaural, id: 946812450

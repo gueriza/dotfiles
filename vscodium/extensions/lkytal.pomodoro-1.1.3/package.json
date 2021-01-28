@@ -1,0 +1,83 @@
+{
+	"name": "pomodoro",
+	"displayName": "Pomodoro Timer",
+	"description": "Pomodoro Timer for vscode",
+	"version": "1.1.3",
+	"publisher": "lkytal",
+	"license": "BY-NC-SA",
+	"engines": {
+		"vscode": "^1.1.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/src/extension",
+	"icon": "icon.png",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.startPomodoro",
+				"title": "Start Pomodoro"
+			},
+			{
+				"command": "extension.pausePomodoro",
+				"title": "Pause Pomodoro"
+			},
+			{
+				"command": "extension.resetPomodoro",
+				"title": "Reset Pomodoro"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Pomodoro Configuration",
+			"properties": {
+				"pomodoro.workTime": {
+					"type": "number",
+					"default": 25,
+					"description": "Time of work, in minutes."
+				},
+				"pomodoro.pauseTime": {
+					"type": "number",
+					"default": 5,
+					"description": "Time of pause, in minutes"
+				},
+				"pomodoro.repeat": {
+					"type": "number",
+					"default": 4,
+					"description": "Number of repeat before long break"
+				}
+			}
+		}
+	},
+	"keywords": [
+		"Pomodoro",
+		"Timer",
+		"Task"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/lkytal/pomodoro.git"
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.7.3",
+		"mocha": "^6.2.0",
+		"typescript": "^3.6.2",
+		"vscode": "^1.1.36"
+	},
+	"__metadata": {
+		"id": "02ad79e8-159a-4d93-b8ef-54c8006b006a",
+		"publisherId": "675457ed-0b91-461b-a1b3-da865bf32269",
+		"publisherDisplayName": "Kaiyuan Liu"
+	}
+}

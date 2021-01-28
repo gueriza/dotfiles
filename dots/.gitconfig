@@ -1,8 +1,8 @@
 # Git configuration.
 
 [user]
-	name = Jack Harrison-Sherlock
-	email = jack@harrisonsherlock.com
+	name = Riza Yahya
+	email = 4548351+gueriza@users.noreply.github.com
 
 [branch "master"]
     remote = origin
@@ -43,15 +43,6 @@
     pager = less -FRSX
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	editor = nano
-
-[diff]
-    tool = vimdiff
-
-[difftool]
-    prompt = false
-
-[merge]
-	tool = vimdiff
 
 [alias]
     # branch
@@ -106,7 +97,7 @@
 [mergetool]
   prompt = false
 [github]
-  user = jackharrisonsherlock
+  user = gueriza
 [grep]
   lineNumber = true
 [fetch]
@@ -121,4 +112,4 @@
 # [url "git@github.com:"]
 #    insteadOf = https://github.com/
 
-	excludesfile = /Users/jackharrison-sherlock/.gitignore_global
+	excludesfile = /Users/riza/.gitignore_global

@@ -6,4 +6,4 @@ Host *
 Host github.com
  HostName github.com
  PreferredAuthentications publickey
- IdentityFile ~/.ssh/github-personal
+ IdentityFile ~/.ssh/gh-pvt
