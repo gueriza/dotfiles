@@ -27,6 +27,6 @@ popd
 ln -s ~/.dotfiles/zsh/prompt/common.zsh-theme $HOME/.oh-my-zsh/themes
 
 # VS Code
-rm -rf ~/Library/Application\ Support/VSCodium/User
-ln -s ~/.dotfiles/vscodium/User ~/Library/Application\ Support/VSCodium/User
+rm -rf ~/Library/Application\ Support/VSCode/User
+ln -s ~/.dotfiles/vscode/User ~/Library/Application\ Support/VSCode/User
 
