@@ -1,0 +1,107 @@
+{
+    /* Warmup */
+    "extensions.autoCheckUpdates": true,
+    "explorer.confirmDelete": false,
+    "files.autoSaveDelay": 1000,
+    "files.autoSave": "afterDelay",
+    "git.enableSmartCommit": true,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "window.zoomLevel": 0,
+    "breadcrumbs.enabled": true,
+    /* in editor content */
+    "editor.fontFamily": "SF Mono",
+    "editor.cursorStyle": "block",
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.renderLineHighlight": "all",
+    "editor.renderIndentGuides": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.renderControlCharacters": true,
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingQuotes": "always",
+    "editor.lightbulb.enabled": true,
+    /* workbench Look */
+    "workbench.settings.editor": "json",
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.closeEmptyGroups": false,
+    "workbench.startupEditor": "none",
+    "workbench.tree.indent": 10,
+    "workbench.tree.renderIndentGuides": "onHover",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#022152",
+        "tab.activeBackground": "#282c34",
+        "activityBar.background": "#282c34",
+        "sideBar.background": "#282c34",
+        "statusBarItem.remoteBackground": "#E0BB33",
+        "statusBarItem.remoteForeground": "#022152"
+    },
+    /* todo-tree Ext */
+    "todo-tree.general.statusBar": "total",
+    "todo-tree.tree.showScanModeButton": false,
+    "todo-tree.general.tags": [
+        "TODO",
+        "FIXME",
+        "HACK",
+        "BUG",
+        "NOTE"
+    ],
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "icon": "check",
+            "iconColour": "yellow",
+            "type": "text-and-comment",
+            "foreground": "black",
+            "background": "yellow",
+            "gutterIcon": true
+        },
+        "FIXME": {
+            "icon": "alert",
+            "iconColour": "red",
+            "type": "text-and-comment",
+            "foreground": "white",
+            "background": "red",
+            "gutterIcon": true
+        },
+        "NOTE": {
+            "icon": "note",
+            "iconColour": "orange",
+            "type": "text-and-comment",
+            "foreground": "white",
+            "background": "#69D2FC",
+            "gutterIcon": true
+        },
+        "HACK": {
+            "icon": "tools",
+            "iconColour": "green",
+            "type": "text-and-comment",
+            "foreground": "white",
+            "background": "green",
+            "gutterIcon": true
+        },
+        "BUG": {
+            "icon": "bug",
+            "iconColour": "#CB4065",
+            "type": "text-and-comment",
+            "foreground": "white",
+            "background": "#CB4065",
+            "gutterIcon": true
+        },
+        /* GITLENS */
+        "gitlens.hovers.enabled": true,
+        "gitlens.codeLens.enabled": false,
+        "gitlens.views.repositories.enabled": true,
+        "gitlens.views.fileHistory.enabled": true,
+        "gitlens.views.lineHistory.enabled": true,
+        "gitlens.views.compare.location": "scm",
+        "gitlens.views.search.location": "scm",
+        "gitlens.blame.heatmap.enabled": true,
+        "gitlens.blame.highlight.enabled": true,
+        "gitlens.statusBar.enabled": false,
+        "gitlens.views.search.enabled": false,
+        "gitlens.views.compare.enabled": false,
+        "gitlens.mode.statusBar.enabled": false,
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+}

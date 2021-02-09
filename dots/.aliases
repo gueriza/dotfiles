@@ -12,8 +12,9 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias hs='history | grep'
 #alias repos="cd code/repos"
-alias zshrc="codium ~/.zshrc"
+alias zshrc="vscodium ~/.zshrc"
 alias bic="brew install --cask"
+alias ul="ultralist"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -25,7 +26,7 @@ else # macOS `ls`
 fi
 
 # List all files colorized in long format
-alias l="ls -lF ${colorflag}"
+alias lf="ls -lF ${colorflag}"
 
 # List all files colorized in long format, excluding . and ..
 alias la="ls -lAF ${colorflag}"

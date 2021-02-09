@@ -5,10 +5,12 @@ echo "Installing homebrew ..."
 
 which -s brew
 if [[ $? != 0 ]] ; then
-  yes | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  yes | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
   echo "Homebrew already installed ..."
 fi
+echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> /Users/riza/.zprofile
+eval $(/opt/homebrew/bin/brew shellenv)
 
 brew update
 brew upgrade
@@ -17,7 +19,6 @@ brew upgrade
 brew install coreutils
 brew install moreutils
 brew install findutils
-ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
 # Install zsh
 brew install zsh
@@ -35,14 +36,14 @@ brew install hub
 # Development
 brew install python
 brew install python3
-brew install php@7.3
+#brew install php@7.3
 brew install node
 brew install nvm
 brew install yarn
 
 # Other
 brew install mas
-brew install wget --with-iri
+brew install wget
 brew install micro
 brew install gnupg
 brew install ssh-copy-id

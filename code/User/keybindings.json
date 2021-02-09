@@ -1,0 +1,11 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[{
+        "key": "shift+cmd+b",
+        "command": "-workbench.action.tasks.build"
+    },
+    {
+        "key": "shift+cmd+b",
+        "command": "HookyQR.beautify",
+        "when": "editorFocus"
+    }
+]
