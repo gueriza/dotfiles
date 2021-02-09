@@ -11,10 +11,10 @@ alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias hs='history | grep'
-#alias repos="cd code/repos"
-alias zshrc="vscodium ~/.zshrc"
+alias zshrc="code ~/.zshrc"
 alias bic="brew install --cask"
 alias ul="ultralist"
+
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
